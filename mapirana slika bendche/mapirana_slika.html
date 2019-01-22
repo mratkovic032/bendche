@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Map test stari</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="mapper/mapper.js"></script>              
+    </head>
+    <body>    
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Šifra</th>
+                    <th>Naziv</th>
+                    <th>Коličina</th>
+                    <th>Cena</th>
+                    <th>Kategorija</th>
+                    <th>Opcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>23</td>
+                    <td>Banana</td>
+                    <td>270 pak</td>
+                    <td>1200 din.</td>
+                    <td>Voće</a></td>
+                    <td>Izmeni</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <img id="bandpic" src="band-15.png" class="mapper" usemap="#band-15" alt="Band pic" style="border-style:none;" />
+        </div>
+        <!-- onmouseover="alert('kliknuo sam')" -->
+        <map id="band-15" name="band-15">
+            <area id="rnd" class="noborder iopacity70 forcegroup" rel="pedja,veljko,rokenrola,stefano" shape="poly" alt="rnd" coords="1,1" href="#" title="rnd" />
+            <area id="pedja" class="noborder iopacity10" rel="rnd,veljko,rokenrola,stefano" shape="poly" alt="pedja" coords="132,419,137,357,139,349,141,338,124,334,116,314,108,282,112,265,118,241,129,226,158,222,174,213,181,189,177,179,172,177,170,163,171,157,175,157,175,133,186,120,204,113,211,113,220,116,231,123,239,131,240,145,238,162,241,165,238,177,236,182,231,182,227,198,229,217,235,217,236,237,213,300,204,300,202,302,206,311,206,313,191,321,190,326,188,331,190,338,192,346,196,353,207,351,208,385,212,420" href="newpage.html" title="pedja" />
+            <area id="veljko" class="noborder iopacity10" rel="rnd,pedja,rokenrola,stefano" shape="poly" alt="veljko" coords="214,420,209,349,197,352,191,337,189,330,191,326,193,321,206,313,208,309,203,302,214,301,238,237,237,214,242,206,254,197,275,176,269,144,265,138,262,130,258,130,257,113,259,112,259,109,257,104,254,93,260,90,269,64,279,55,294,54,304,54,319,70,328,88,329,109,332,110,332,117,329,124,324,129,321,155,340,170,361,174,373,178,390,193,395,214,408,237,416,243,419,261,416,265,424,285,425,301,424,318,409,335,375,345,381,372,393,396,387,404,376,408,367,420" href="veljko.html" title="veljko" />
+            <area id="rokenrola" class="noborder iopacity10" rel="rnd,pedja,veljko,stefano" shape="poly" alt="rokenrola" coords="380,419,381,407,389,405,395,395,382,371,377,347,411,336,425,320,427,284,421,264,420,243,400,219,393,197,391,191,376,176,363,172,379,152,408,143,412,134,420,126,427,124,442,127,449,96,442,93,442,83,445,74,452,72,463,54,475,44,490,34,499,33,509,38,515,40,523,49,523,56,529,61,525,77,525,85,513,105,514,109,513,115,508,122,504,124,503,127,497,127,500,130,512,133,530,141,537,149,536,158,544,163,551,171,555,182,560,196,566,210,569,235,573,254,575,275,574,287,577,299,579,319,578,341,576,360,577,378,575,388,564,402,561,406,550,407,542,416,542,421" href="rokenrola.html" title="rokenrola" />
+            <area id="stefano" class="noborder iopacity10" rel="rnd,pedja,veljko,rokenrola" shape="poly" alt="stefano" coords="544,419,552,409,566,408,577,391,581,369,580,360,582,329,581,316,582,303,577,282,576,251,571,222,565,194,556,181,561,178,564,159,559,158,558,153,558,146,560,140,564,138,567,125,578,106,588,101,600,99,613,99,621,110,624,111,627,124,630,129,624,153,627,157,625,163,622,170,618,174,615,171,609,182,607,190,610,191,611,200,621,207,647,212,651,217,657,229,661,236,668,252,668,262,674,268,675,286,680,294,678,299,685,308,685,318,680,327,676,328,671,335,666,337,662,335,652,340,655,364,677,416,668,421" href="stefano.html" title="stefano" />
+            <!-- <area shape="default" nohref="nohref" alt="" /> -->
+        </map>        
+    </body>
+</html>

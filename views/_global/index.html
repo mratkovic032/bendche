@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BendCHE - {% block title %}Pocetna{% endblock %}</title>
+        <meta charset="utf-8">        
+        <script>const BASE = '{{ BASE }}';</script>
+        <link rel="shortcut icon" href="{{ BASE }}assets/img/title_logo.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="{{ BASE }}assets/css/main-css.css" rel="stylesheet" type="text/css"/>
+        <link href="{{ BASE }}assets/css/animate.css" rel="stylesheet" type="text/css"/>                
+        <link href="{{ BASE }}assets/libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <script src="{{ BASE }}assets/libs/jquery/dist/jquery.min.js" type="text/javascript"></script>
+        <link href="{{ BASE }}assets/libs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="{{ BASE }}assets/libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="{{ BASE }}assets/js/main-js.js" type="text/javascript"></script>         
+    </head>
+
+    <body id="myPage" data-spy="scroll" data-target=".navbar">        
+        <div>
+            <main>
+                {% block main %}
+                {% endblock %}
+            </main>
+        </div>    
+    </body>
+</html>
