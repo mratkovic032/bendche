@@ -3,301 +3,447 @@
 {% block main %}
 
 <nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>                    
-            <a class="navbar-brand" id="small-logo-brand" href="#myPage">BEND CHE</a>
-            <a class="navbar-brand" id="big-logo-brand" href="#myPage"><img class="img-circle img-responsive" id="logoPic" src="{{ BASE }}assets/img/logo.jpg" alt="Logo" /></a>                      
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#myPage" class="active">POČETNA</a></li>
-                <li><a href="#band">BAND</a></li>
-                <li><a href="#dates">DATUMI</a></li>
-                <li><a href="#contact">KONTAKT</a></li>
-            </ul>
-        </div>                
-    </div>
+	<div class="container-fluid navbar-wrapper">
+		<div class="navbar-header wow fadeIn" data-wow-duration="1.5s">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>                    
+			<!-- <a class="navbar-brand" id="small-logo-brand" href="#myPage">bend che</a> -->
+			<a class="navbar-brand" id="big-logo-brand" href="#myPage"><img class="img-circle img-responsive" src="{{ BASE }}assets/img/title_logo.png" alt="Logo" /></a>                      
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="wow fadeInUp" data-wow-duration="1.6s"><a href="#myPage" class="active">početna</a></li>
+				<li class="wow fadeInUp" data-wow-duration="1.4s"><a href="#events">nastupi</a></li>
+				<li class="wow fadeInUp" data-wow-duration="1.2s"><a href="#band">bend</a></li>
+				<li class="wow fadeInUp" data-wow-duration="1s"><a href="#contact">kontakt</a></li>
+			</ul>
+		</div>                
+	</div>
 </nav>
 
-<!-- carousel -->
-<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
-    <!-- indicators -->
-    <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-        <li data-target="#myCarousel" data-slide-to="5"></li>
-        <li data-target="#myCarousel" data-slide-to="6"></li>
-        <li data-target="#myCarousel" data-slide-to="7"></li>
-    </ol>
+<!-- landing img -->
+<div id="landing-wrapper" class="container-fluid">
+    <div class="row">
 
-    <!-- wrapper for slides -->
-    <div class="carousel-inner" role="listbox">                
-        <div class="item active">
-            <img src="{{ BASE }}assets/img/band-3.jpg" alt="band picture" />                    
+        <div id="veljko-wrapper" class="col-lg-3 landing-img-wrapper wow fadeIn" data-wow-delay="1.6s" data-wow-duration="2s">
+            <img id="veljko" class="landing-img" src="{{ BASE }}assets/img/landing-img/veljko.png" alt="Veljko's landing picture">
+            <div id="veljko-card-wrapper" class="card-wrapper">
+                <div id="veljko-card" class="card card-left">
+                    <div class="top-section">
+                        <img src="{{ BASE }}assets/img/profile-card/veljko-profile.png" alt="Veljko's profile card picture" />
+                        <div class="name">
+                            Veljko<br>
+                            <span>Janković</span>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <p class="info-section-headers">Biografija</p>
+                        <p class="about-text">Jedini živi primerak homo sapiensa koji radi u privrednom sudu kao pripravnik, a ujedno predstavlja i glavni vokal benda. Puka je suprotnost dosadne i suve materije sa državnih fakulteta, pa je zbog te energije i često polaskan pitanjem: `Jesi ti bre na nekim drogama?`. Ovakva polimerizacija i nemoguć spoj, bendu daju glavnu udarnu vest. Diplomirao na Pravnom fakultetu u Beogradu 2017. godine, muzikom se bavi od svoje dvanaeste godine, zavrsio je i osnovnu muzičku skolu 2015. godine.</p>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/Wex93" target="_blank" class="fab fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></a>
+                            <a href="https://www.instagram.com/veljoslav" target="_blank" class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></a>
+                            <a href="tel:+381644102992" target="_blank" class="fab fa-whatsapp" data-toggle="tooltip" data-placement="top" title="WhatsApp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-            <img src="{{ BASE }}assets/img/band-15.png" alt="band picture" />                    
-        </div>                                                
-
-        <div class="item">
-            <img src="{{ BASE }}assets/img/band-5.jpg" alt="band picture" />                    
-        </div>                                
-
-        <div class="item">
-            <img src="{{ BASE }}assets/img/band-9.jpg" alt="band picture" />                    
-        </div>                                
-
-        <div class="item">
-            <img src="{{ BASE }}assets/img/band-10.jpg" alt="band picture" />                    
+        <div id="pedja-wrapper" class="col-lg-3 landing-img-wrapper wow fadeIn" data-wow-delay="1.6s" data-wow-duration="2s">            
+            <img id="pedja" class="landing-img" src="{{ BASE }}assets/img/landing-img/pedja.png" alt="Pedja's landing picture">
+            <div id="pedja-card-wrapper" class="card-wrapper">
+                <div id="pedja-card" class="card card-left">
+                    <div class="top-section">
+                        <img src="{{ BASE }}assets/img/profile-card/pedja-profile.png" alt="Pedja's profile card picture" />
+                        <div class="name">
+                            Predrag<br>
+                            <span>Avramović</span>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <p class="info-section-headers">Biografija</p>
+                        <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>                        
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/PedjaAvramovic" target="_blank" class="fab fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></a>
+                            <a href="https://www.instagram.com/pedjabasista" target="_blank" class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></a>
+                            <a href="tel:+381694202186" target="_blank" class="fab fa-whatsapp" data-toggle="tooltip" data-placement="top" title="WhatsApp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="pavle-wrapper" class="col-lg-3 landing-img-wrapper wow fadeIn" data-wow-delay="1.8s" data-wow-duration="2s">
+            <img id="pavle" class="landing-img" src="{{ BASE }}assets/img/landing-img/pavle.png" alt="Pavle's landing picture">
+            <div id="pavle-card-wrapper" class="card-wrapper">
+                <div id="pavle-card" class="card card-right">
+                    <div class="top-section">
+                        <img src="{{ BASE }}assets/img/profile-card/pavle-profile.png" alt="Pavle's profile card picture" />
+                        <div class="name">
+                            Pavle<br>
+                            <span>Djurić</span>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <p class="info-section-headers">Biografija</p>
+                        <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                        <div class="social-media">
+                            <a href="https://www.facebook.com/pajadj" target="_blank" class="fab fa-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"></a>
+                            <a href="https://www.instagram.com/dzastinkejs" target="_blank" class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></a>
+                            <a href="tel:+38166422329" target="_blank" class="fab fa-whatsapp" data-toggle="tooltip" data-placement="top" title="WhatsApp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-            <img src="{{ BASE }}assets/img/band-13.jpg" alt="band picture" />                    
+        <div id="stefano-wrapper" class="col-lg-3 landing-img-wrapper wow fadeIn" data-wow-delay="1.9s" data-wow-duration="2s">
+            <img id="stefano" class="landing-img" src="{{ BASE }}assets/img/landing-img/stefano.png" alt="Stefano's landing picture">
+            <div id="stefano-card-wrapper" class="card-wrapper">
+                <div id="stefano-card" class="card card-right">
+                    <div class="top-section">
+                        <img src="{{ BASE }}assets/img/profile-card/stefano-profile.png" alt="Stefano's profile card picture" />
+                        <div class="name">
+                            Nikola<br>
+                            <span>Stefanović</span>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <p class="info-section-headers">Biografija</p>
+                        <p class="about-text">Kahonista benda ili na maternjem `onaj što lupa u kutiju`. Rođen u Čačku 1993. godine u jeku sankcija međunarodne zajednice protiv SR Jugoslavije, što je najverovatnije uzrok njegove neizmerne ljubavi prema domaćim konditorskim proizvodima. Vukova diploma u osnovnoj školi, obična diploma u Gimnaziji i još uvek bez željene diplome Saobraćajnog fakulteta. Umesto da zagreje stolicu, zagrejao je kahon a time i atmosferu na svakoj bendchetovoj svirci.</p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/_fanostefano_" target="_blank" class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></a>
+                            <a href="tel:+381645884937" target="_blank" class="fab fa-whatsapp" data-toggle="tooltip" data-placement="top" title="WhatsApp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="item">
-            <img src="{{ BASE }}assets/img/band-4.jpg" alt="band picture" />                    
-        </div> 
-
-        <div class="item">
-            <img src="{{ BASE }}assets/img/band-12.jpg" alt="band picture" />                    
-        </div> 
     </div>
-
-    <!-- controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Prethodni</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Sledeci</span>
-    </a>
 </div>
+<!-- END landing img -->
 
-<!-- band -->
-<div id="band" class="container text-center">
-    <div class="row">
-        <div class="col-md-12">
-            <h3>BEND CHE</h3>
-            <p><em>Mi volimo muziku!</em></p>
-            <p>Rock/Pop/Funk/RnB akusticni kaver bend</p>
-            <p>
-                Mlad ali iskusan bend, dve gitare, dva glasa i ritam sekcija. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-    </div>
-    <br />
-
-    <div class="row band-info-pics">
-        <div class="col-sm-6 col-md-6 col-lg-3 person-left">
-            <p><strong>Predrag Avramović</strong></p><br />                    
-            <a href="#pedja-info" data-toggle="collapse">
-                <div class="parent img-circle">
-                    <img src="{{ BASE }}assets/img/pedja.jpg" class="img-circle person" alt="pedja avramović" data-toggle="tooltip" data-placement="top" title="Klikni za više infomacija"/>
-                    <span class="person-text person-text-opened"><i class="fa fa-arrow-circle-down"></i></span>
-                </div>    
-            </a>                                          
-            <div id="pedja-info" class="collapse info-collapse">
-                <p>Rođen 1995. godine u Čačku, gde je završio Osnovnu i Srednju školu, sada student Saobraćajnog Fakulteta. Ambiciozan i veoma duhovit momak, zadužen za bass gitaru</p>
-            </div>                    
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 person-left">
-            <p><strong>Veljko Janković</strong></p><br />
-            <a href="#veljko-info" data-toggle="collapse">
-                <div class="parent img-circle">
-                    <img src="{{ BASE }}assets/img/veljko-3.jpg" class="img-circle person" alt="veljko janoković" data-toggle="tooltip" data-placement="top" title="Klikni za više infomacija"/>
-                    <span class="person-text"><i class="fa fa-arrow-circle-down"></i></span>
-                </div>    
-            </a>
-            <div id="veljko-info" class="collapse info-collapse">
-                <p>Rođen 1994 u Sopotu, talentovan i sa puno iskustva, svojim izvanrednim glasom i svojom energijom veoma lako podize publiku na noge.</p>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 person-right">
-            <p><strong>Pavle Đurić</strong></p><br />
-            <a href="#pavle-info" data-toggle="collapse">
-                <div class="parent img-circle">
-                    <img src="{{ BASE }}assets/img/pavle.jpg" class="img-circle person" alt="pavle đurić" data-toggle="tooltip" data-placement="top" title="Klikni za više infomacija" />
-                    <span class="person-text"><i class="fa fa-arrow-circle-down"></i></span>
-                </div>    
-            </a>
-            <div id="pavle-info" class="collapse info-collapse">
-                <p>Student Saobraćajnog Fakulteta zadužen za gitaru i prateći vokal.</p>
-            </div>
-        </div>
-        <div class="col-sm-6 col-md-6 col-lg-3 person-right">
-            <p><strong>Nikola Stefanović</strong></p><br />
-            <a href="#stefano-info" data-toggle="collapse">
-                <div class="parent img-circle">
-                    <img src="{{ BASE }}assets/img/stefano.jpg" class="img-circle person" alt="nikola stefanović" data-toggle="tooltip" data-placement="top" title="Klikni za više infomarcija" />
-                    <span class="person-text"><i class="fa fa-arrow-circle-down"></i></span>
-                </div>
-            </a>
-            <div id="stefano-info" class="collapse info-collapse">
-                <p>Rođen u Čačku 1993 godine, gde je zavrđio Osnovnu i Srednju školu, sada student Saobraćajnog Fakulteta. Obožava bubanj, kahon i sve što se tiče ritma.</p>
-            </div>
-        </div>
-    </div>           
-
-    <hr />
-
-    <!-- photo grid -->
-    <div class="row">
-        <div class="col-md-12">
-            <div class="column">
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/band-6.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/anker.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/pedja-i-stefano.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/band-7.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/band-14.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/stefano-2.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/republika.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/pedja-2.jpg" style="width:100%" alt="photo grid">
-                </div>
-            </div>
-            <div class="column">                        
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/stefano.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/pedja.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/close-up.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/band-11.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/pivara.jpg" style="width:100%" alt="photo grid">
-                </div>
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/tramvaj.jpg" style="width:100%" alt="photo grid">
-                </div>                        
-                <div class="photo-grid">
-                    <img src="{{ BASE }}assets/img/photo-grid/band-12.jpg" style="width:100%" alt="photo grid">
-                </div>                        
-            </div>
-        </div>
-    </div>
-
-</div>        
-<!-- dates -->
-<div id="dates" class="bg-1">
+<!-- events -->
+<p class="events-rotated-text">nastupi</p>
+<div id="events">
     <div class="container">
-        <h3 class="text-center">DATUMI</h3>
-        <p class="text-center"><em>Nastupi u Beogradu i šire</em></p>
-        <p style="margin-bottom: 20px;" class="text-center"><em>Dođite i čujte nas na nekim od naših sledećih nastupa, ne zaboravite da ponesete osmeh i dobro raspoloženje</em></p>
-        <ul class="list-group">                                                            
-            <li class="list-group-item">Decembar 21. - <a href="http://tramvaj.rs/" target="_blank">Tramvaj Pub</a> / <a class="mapLinks" id="tramvaj1" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Ruzveltova 2</a></li>
-            <li class="list-group-item">Decembar 22. - <a href="http://pivara.rs/" target="_blank">Pivara</a> / <a class="mapLinks" id="pivara1" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Cetinjska 15</a> <span class="label label-warning">NE PROPUSTITE!</span></li>                    
-            <li class="list-group-item">Decembar 23. - <a href="https://www.facebook.com/leonidascafe/" target="_blank">Leonidas Cafe</a> / <a class="mapLinks" id="leonidas" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Braće Jerković 201</a></li>                    
-            <li class="list-group-item">Decembar 26. - <a href="http://www.squarefivebar.rs/" target="_blank">Square Five</a> / <a class="mapLinks" id="squarefive2" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Trg Republike 5</a></li>
-            <li class="list-group-item">Decembar 28. - <a href="http://tramvaj.rs/" target="_blank">Tramvaj Pub</a> / <a class="mapLinks" id="tramvaj2" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Ruzveltova 2</a></li>
-            <li class="list-group-item">Decembar 29. - <a href="http://pivara.rs/" target="_blank">Pivara</a> / <a class="mapLinks" id="pivara2" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Cetinjska 15</a></li>                    
-            <li id="ng" style="font-family: Helvetica Neue, sans-serif, FontAwesome;" class="list-group-item list-group-item-danger">Decembar 31. - <a href="http://pivara.rs/" target="_blank">Pivara</a> / <a class="mapLinks" id="pivara3" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Cetinjska 15</a> <span class="label label-danger">NOVOGODIŠNJA NOĆ 2018, REZERVIŠITE NA VREME! </span><i style="margin-left: 5px;" class="fa fa-arrow-right" aria-hidden="true"></i> <a href="tel:062748272"> 062 / Pivara</a></li>
-            <li class="list-group-item">Januar 01. - <a href="http://pivara.rs/" target="_blank">Pivara</a> / <a class="mapLinks" id="pivara4" href="#googleMap" data-toggle="tooltip" data-placement="top" title="Prikazi na mapi">Cetinjska 15</a> <span class="label label-warning">REPRIZA NOVE GODINE!</span></li>                    
-        </ul>
-
-        <!-- youtube video -->
-        <div class="embed-responsive embed-responsive-16by9 yt-video">
-            <iframe class="video" src="https://www.youtube.com/embed/9tjPbgrqQv4?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen></iframe>
+        <div class="row">
+            <div class="events-wrapper wow fadeIn" data-wow-delay=".5s" data-wow-duration="0.5s">
+                <div id="event1" class="col-lg-12 the-event wow fadeIn" data-wow-delay="1.1s" data-wow-duration="0.6s">
+                    <div class="row">
+                        <div class="col-lg-2 lokal-img-wrapper">
+                            <img class="lokal-img" src="{{ BASE }}assets/img/lokali-img/tramvaj.jpg" alt="">
+                        </div>
+                        <div class="col-lg-10 lokal-info">
+                            <p class="lokal-name">Tramvaj Pub</p>
+                            <p class="lokal-address">Ruzveltova 2, Beograd, Srbija</p>
+                            <p class="lokal-small-desc">U utorak tvistujemo u dragom nam Tramvaj Pub-u zajedno sa Sarom Novcic!</p>
+                            <p class="lokal-date"><i class="far fa-calendar-alt"></i> &nbsp;Maj 31, 2019</p>
+                            <button id="event1-button" class="event-more-info">više informacija</button>
+                        </div>
+                        <div class="col-lg-12 lokal-more-info">
+                            <p class="lokal-sub-title">O lokalu...</p>
+                            <p>Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama.</p>
+                            <p class="lokal-sub-title">Kontakt lokala i korisni linkovi:</p>
+                            <a href="tel:+381 65 872 68 25" class="lokal-contact">+381 65 872 68 25</a><br>
+                            <a href="mailto:kontakt@tramvaj.rs" class="lokal-contact">kontakt@tramvaj.rs</a><br><br>
+                            <a href="https://www.facebook.com/tramvajpub/" target="_blank" class="lokal-socials" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/tramvaj_pub/" target="_blank" class="lokal-socials"><i class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
+                            <a href="https://twitter.com/Tramvaj_pub" target="_blank" class="lokal-socials"><i class="fab fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+                            <p class="lokal-sub-title" id="lokal-sub-title-map">Mapa:</p>
+                        </div>                       
+                    </div>
+                </div>
+                <div id="event2" class="col-lg-12 the-event wow fadeIn" data-wow-delay="1.3s" data-wow-duration="0.6s">
+                    <div class="row">
+                        <div class="col-lg-2 lokal-img-wrapper">
+                            <img class="lokal-img" src="{{ BASE }}assets/img/lokali-img/vronski.jpg" alt="">
+                        </div>
+                        <div class="col-lg-10 lokal-info">
+                            <p class="lokal-name">Vrosnki Cafe & Vin</p>
+                            <p class="lokal-address">Internacionalnih brigada 22, Beograd, Srbija</p>
+                            <p class="lokal-small-desc">U cetvrtak se vidimo po prvi put u Vronski Cafe & Vin!</p>
+                            <p class="lokal-date"><i class="far fa-calendar-alt"></i> &nbsp;Maj 31, 2019</p>
+                            <button id="event2-button" class="event-more-info">više informacija</button>
+                        </div>
+                        <div class="col-lg-12 lokal-more-info">
+                            <p class="lokal-sub-title">O lokalu...</p>
+                            <p>Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama.</p>
+                            <p class="lokal-sub-title">Kontakt lokala i korisni linkovi:</p>
+                            <a href="tel:+381 65 872 68 25" class="lokal-contact">+381 65 872 68 25</a><br>
+                            <a href="mailto:kontakt@tramvaj.rs" class="lokal-contact">kontakt@tramvaj.rs</a><br><br>
+                            <a href="https://www.facebook.com/tramvajpub/" target="_blank" class="lokal-socials" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/tramvaj_pub/" target="_blank" class="lokal-socials"><i class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
+                            <a href="https://twitter.com/Tramvaj_pub" target="_blank" class="lokal-socials"><i class="fab fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+                            <p class="lokal-sub-title" id="lokal-sub-title-map">Mapa:</p>
+                        </div>                                               
+                    </div>
+                </div>
+                <div id="event3" class="col-lg-12 the-event wow fadeIn" data-wow-delay="1.5s" data-wow-duration="0.6s" id="event3">
+                    <div class="row">
+                        <div class="col-lg-2 lokal-img-wrapper">
+                            <img class="lokal-img" src="{{ BASE }}assets/img/lokali-img/pivara.jpg" alt="">
+                        </div>
+                        <div class="col-lg-10 lokal-info">
+                            <p class="lokal-name">Pivara Bar</p>
+                            <p class="lokal-address">Cetinjska 15a, Beograd, Srbija</p>
+                            <p class="lokal-small-desc">Za sada vec poznat, standardno vrhunski petak u Pivara Bar-u1!</p>
+                            <p class="lokal-date"><i class="far fa-calendar-alt"></i> &nbsp;Maj 31, 2019</p>
+                            <button id="event3-button" class="event-more-info">više informacija</button>
+                        </div>
+                        <div class="col-lg-12 lokal-more-info">
+                            <p class="lokal-sub-title">O lokalu...</p>
+                            <p>Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama.</p>
+                            <p class="lokal-sub-title">Kontakt lokala i korisni linkovi:</p>
+                            <a href="tel:+381 65 872 68 25" class="lokal-contact">+381 65 872 68 25</a><br>
+                            <a href="mailto:kontakt@tramvaj.rs" class="lokal-contact">kontakt@tramvaj.rs</a><br><br>
+                            <a href="https://www.facebook.com/tramvajpub/" target="_blank" class="lokal-socials" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/tramvaj_pub/" target="_blank" class="lokal-socials"><i class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
+                            <a href="https://twitter.com/Tramvaj_pub" target="_blank" class="lokal-socials"><i class="fab fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+                            <p class="lokal-sub-title" id="lokal-sub-title-map">Mapa:</p>
+                        </div>                                                
+                    </div>
+                </div>
+                <div id="event4" class="col-lg-12 the-event wow fadeIn" data-wow-delay="1.7s" data-wow-duration="0.6s">
+                    <div class="row">
+                        <div class="col-lg-2 lokal-img-wrapper">
+                            <img class="lokal-img" src="{{ BASE }}assets/img/lokali-img/dobrila.jpg" alt="">
+                        </div>
+                        <div class="col-lg-10 lokal-info">
+                            <p class="lokal-name">Dobrila Pub</p>
+                            <p class="lokal-address">Dobracina 30, Beograd, Srbija</p>
+                            <p class="lokal-small-desc">U subotu se vidimo na velikoj bini Dobrila Pub-a!</p>
+                            <p class="lokal-date"><i class="far fa-calendar-alt"></i> &nbsp;Maj 31, 2019</p>
+                            <button id="event4-button" class="event-more-info">više informacija</button>
+                        </div>
+                        <div class="col-lg-12 lokal-more-info">
+                            <p class="lokal-sub-title">O lokalu...</p>
+                            <p>Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama. Nalazi se veoma dobroj i pristupacnoj lokaciji do koje je lako doci gde god da ste u Beogradu. Tacnije smesten je kod Vukovog spomenika, preko puta Masinskog fakulteta. Dobro poznat pab sa velikim izborom piva i odlicnik svirkama.</p>
+                            <p class="lokal-sub-title">Kontakt lokala i korisni linkovi:</p>
+                            <a href="tel:+381 65 872 68 25" class="lokal-contact">+381 65 872 68 25</a><br>
+                            <a href="mailto:kontakt@tramvaj.rs" class="lokal-contact">kontakt@tramvaj.rs</a><br><br>
+                            <a href="https://www.facebook.com/tramvajpub/" target="_blank" class="lokal-socials" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/tramvaj_pub/" target="_blank" class="lokal-socials"><i class="fab fa-instagram" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
+                            <a href="https://twitter.com/Tramvaj_pub" target="_blank" class="lokal-socials"><i class="fab fa-twitter-square" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+                            <p class="lokal-sub-title" id="lokal-sub-title-map">Mapa:</p>
+                        </div>                                               
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- contact -->
-<div id="contact" class="container">
-    <h3 class="text-center">KONTAKT</h3>
-    <p style="margin-bottom: 20px;" class="text-center"><em>Naši fanovi su na prvom mestu!</em></p>
-    <div class="row info">
-        <div class="col-md-4" style="font-family: FontAwesome;">
-            <p><span class="fa fa-map-marker fa-lg" aria-hidden="true"></span>&nbsp;Beograd, Srbija</p>
-            <p><span class="fa fa-phone-square fn-lg" aria-hidden="true"></span>&nbsp;Telefon: <a href="tel:+381694204186" class="tel">+381 69 4204186</a> (Peђа)</p>
-            <p><span class="fa fa-phone-square fn-lg" aria-hidden="true"></span>&nbsp;Telefon: <a href="tel:+381644102992" class="tel">+381 64 4102992</a> (Veljko)</p>
-            <p><span class="fa fa-envelope-o" aria-hidden="true"></span>&nbsp;Email: <a href="mailto:booking@bendche.dx.am" class="tel">booking@bendche.dx.am</a></p>
+<!-- about band -->
+<div id="band" class="container-fluid">
+    <div class="about-band-img"></div>
+    <div class="row">
+        <div class="col-lg-6 about-headlines">
+            <div class="about-band-headline wow fadeInUp" data-wow-delay="1.2s">Bend CHE</div>
+            <div class="about-band-sub-headline sub-headline-1 wow fadeInLeft" data-wow-delay="0.6s">your</div>
+            <div class="about-band-sub-headline sub-headline-2 wow fadeInLeft" data-wow-delay="0.8s">acoustic</div>
+            <div class="about-band-sub-headline sub-headline-3 wow fadeInLeft" data-wow-delay="1s">experience</div>  
         </div>
+        <div class="col-lg-6">
 
-        <div class="col-md-8">
-            <form action="php/email_script.php" method="POST">
-                <div class="row">
-                    <div class="col-sm-6 form-group">
-                        <input style="font-family: FontAwesome;" class="form-control" id="from" name="subject" placeholder="&#xf007; Ime" type="text" required />
-                    </div>
-                    <div class="col-sm-6 form-group">
-                        <input style="font-family: FontAwesome;" class="form-control" id="email" name="email" placeholder="&#xf0e0; Email (vas@email.com)" type="email" required />
-                    </div>
-                </div>
-                <textarea style="font-family: FontAwesome;" class="form-control" id="message" name="message" placeholder="&#xf086; Poruka" rows="5"></textarea>
-                <div class="row">
-                    <div class="col-md-12 form-group">
-                        <button class="btn pull-right posaljiBtn" type="submit">POŠALJI E-MAIL</button>
-                    </div>                         
-                </div>
-            </form>
         </div>
-    </div>
-
-    <h3 id="commentsH3" class="text-center">KOMENTARI</h3>
-    <ul class="nav nav-tabs comments">
-        <li class="active"><a data-toggle="tab" href="#home">Nikola</a></li>
-        <li><a data-toggle="tab" href="#menu1">Veljko</a></li>
-        <li><a data-toggle="tab" href="#menu2">Pavle</a></li>
-        <li><a data-toggle="tab" href="#menu3">Predrag</a></li>
-    </ul>
-
-    <div class="tab-content">
-        <div id="home" class="tab-pane fade in active">
-            <h2>Nikola Stefanović, kahon</h2>
-            <p>Alkoholičar i narkoman, inače mnogo volim da lupam u kutiju i neću se nikada ošišati</p>
-        </div>
-        <div id="menu1" class="tab-pane fade">
-            <h2>Veljko Janković, gitarista i vodeći vokal</h2>
-            <p>Mnogo dobro pevam heh</p>
-        </div>
-        <div id="menu2" class="tab-pane fade">
-            <h2>Pavle Đurić, gitarista i prateći vokal</h2>
-            <p>Studiram Saobraćajni Fakultet</p>
-        </div>
-        <div id="menu3" class="tab-pane fade">
-            <h2>Predrag Avramović, bass gitara</h2>
-            <p>Kakvi smo ludaci, a?!</p>
-        </div>
-    </div>
+    </div>    
 </div>
+
+<!-- images -->
+<div id="images" class="container-fluid text-center">    
+    <!-- <hr /> -->
+    <!-- photo grid -->        
+    <div class="images-row">
+        <div class="images-column">
+            <img src="{{ BASE }}assets/img/photo-grid/band-6.jpg" class="wow fadeInUp" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/anker.jpg" class="wow fadeInUp" data-wow-delay="0.2s" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/pedja-i-stefano.jpg" class="wow fadeInUp" data-wow-delay="0.4s" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/band-7.jpg" class="wow fadeInUp" data-wow-delay="0.6" alt="photo grid">
+        </div>
+
+        <div class="images-column">
+            <img src="{{ BASE }}assets/img/photo-grid/band-14.jpg" class="wow fadeInUp"  alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/stefano-2.jpg" class="wow fadeInUp" data-wow-delay="0.2s" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/republika.jpg" class="wow fadeInUp" data-wow-delay="0.4s" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/pedja-2.jpg"class="wow fadeInUp" data-wow-delay="0.6s"  alt="photo grid">
+        </div>
+
+        <div class="images-column">
+            <img src="{{ BASE }}assets/img/photo-grid/stefano.jpg" class="wow fadeInUp"  alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/pedja.jpg"class="wow fadeInUp" data-wow-delay="0.2s" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/band-11.jpg" class="wow fadeInUp" data-wow-delay="0.2s" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/band-12.jpg" class="wow fadeInUp" data-wow-delay="0.2s" alt="photo grid">
+        </div>
+        
+        <div class="images-column">
+            <img src="{{ BASE }}assets/img/photo-grid/pivara.jpg" class="wow fadeInUp" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/tramvaj.jpg" class="wow fadeInUp" data-wow-delay="0.2s" alt="photo grid">
+            <img src="{{ BASE }}assets/img/photo-grid/close-up.jpg" class="wow fadeInUp" data-wow-delay="0.4s" alt="photo grid">
+        </div>
+    </div>    
+</div>        
+
+<section id="testimonials">
+    <div class="container">        
+        <div class="row">            
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-box">
+                    <div class="quote"><i class="fas fa-quote-right"></i></div>
+                    <div class="testimonial-comment">
+                        Najjaci u drzavi!
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="username">Milos Jankovic</span><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-box">
+                    <div class="quote"><i class="fas fa-quote-right"></i></div>
+                    <div class="testimonial-comment">
+                        Momci, kidate!!!!
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="username">Aleksandra Aleksic</span><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-box">
+                    <div class="quote"><i class="fas fa-quote-right"></i></div>
+                    <div class="testimonial-comment">
+                        &lt;3 &lt;3 &lt;3 &lt;3 &lt;3
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="username">Mila Sarkic</span><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-box">
+                    <div class="quote"><i class="fas fa-quote-right"></i></div>
+                    <div class="testimonial-comment">
+                        Svaka Vam cast!
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="username">Jelena Nikolov</span><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-box">
+                    <div class="quote"><i class="fas fa-quote-right"></i></div>
+                    <div class="testimonial-comment">
+                        Nema sta, sve pohvale za momke!
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="username">Nikola Stanojevic</span><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-box">
+                    <div class="quote"><i class="fas fa-quote-right"></i></div>
+                    <div class="testimonial-comment">
+                        Malo ste me smorili ali gogo bendche
+                    </div>
+                    <div class="testimonial-footer">
+                        <span class="username">Milos Ratkovic</span><br>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>            
+    </div>    
+</section>
+
+<section id="contact">
+
+</section>
+
+<div id="event-info">
+
+</div>
+
+<!-- <div class="contaier">            
+        <h3 class="text-center">KONTAKT</h3>
+        <p style="margin-bottom: 20px;" class="text-center"><em>Naši fanovi su na prvom mestu!</em></p>
+        <div class="row info">
+            <div class="col-md-4" style="font-family: FontAwesome;">
+                <p><span class="fa fa-map-marker fa-lg" aria-hidden="true"></span>&nbsp;Beograd, Srbija</p>
+                <p><span class="fa fa-phone-square fn-lg" aria-hidden="true"></span>&nbsp;Telefon: <a href="tel:+381694204186" class="tel">+381 69 4204186</a> (Peђа)</p>
+                <p><span class="fa fa-phone-square fn-lg" aria-hidden="true"></span>&nbsp;Telefon: <a href="tel:+381644102992" class="tel">+381 64 4102992</a> (Veljko)</p>
+                <p><span class="fa fa-envelope-o" aria-hidden="true"></span>&nbsp;Email: <a href="mailto:booking@bendche.dx.am" class="tel">booking@bendche.dx.am</a></p>
+            </div>
+    
+            <div class="col-md-8">
+                <form action="php/email_script.php" method="POST">
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <input style="font-family: FontAwesome;" class="form-control" id="from" name="subject" placeholder="&#xf007; Ime" type="text" required />
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <input style="font-family: FontAwesome;" class="form-control" id="email" name="email" placeholder="&#xf0e0; Email (vas@email.com)" type="email" required />
+                        </div>
+                    </div>
+                    <textarea style="font-family: FontAwesome;" class="form-control" id="message" name="message" placeholder="&#xf086; Poruka" rows="5"></textarea>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <button class="btn pull-right posaljiBtn" type="submit">POŠALJI E-MAIL</button>
+                        </div>                         
+                    </div>
+                </form>
+            </div>
+        </div>  
+</div> -->
 
 <!-- mapa -->
-<div id="googleMap"></div>
+<!-- <div id="googleMap"></div>
 <a id="datesBtn" href="#dates">VRATI SE NA DATUME</a>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHzuhEe40_UtGiotTilI2mWObMR60a9B4&callback=myMap"></script>        
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHzuhEe40_UtGiotTilI2mWObMR60a9B4&callback=myMap"></script>         -->
 
 <!-- footer -->
-<footer class="text-center">
+<!-- <footer class="text-center">
     <div class="row" style="margin-top: 20px;">
         <div id="fb" class="col-md-1 col-xs-4 col-md-offset-4 social-media">
             <a href="https://www.facebook.com/bendche/" target="_blank"><i class="fa fa-facebook-square fa-3x"></i></a>
@@ -317,10 +463,10 @@
         </div>
     </div>
     <p class="text-center" style="font-size: 10px; position: relative; bottom: 0; width: 100%;">&COPY; MR2017</p>
-</footer>        
+</footer>         -->
 
 <!-- modal -->
-<div class="row modal" id="msg-sent-modal">            
+<!-- <div class="row modal" id="msg-sent-modal">            
     <div class="col-md-10 col-md-offset-1 col-xs-12">            
         <div class="panel panel-default">                    
             <div class="panel-body" style="text-align: center; font-size: 25px; color: #F1C53D; background: #2D2D30">
@@ -329,6 +475,6 @@
             </div>                 
         </div>
     </div>
-</div>
+</div>  -->
 
 {% endblock %}

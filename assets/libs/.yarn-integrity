@@ -1,0 +1,26 @@
+{
+  "systemParams": "win32-x64-64",
+  "modulesFolders": [
+    "assets\\libs"
+  ],
+  "flags": [],
+  "linkedModules": [],
+  "topLevelPatterns": [
+    "@fortawesome/fontawesome-free@^5.8.2",
+    "animate.css@^3.7.0",
+    "bootstrap@3.3.7",
+    "jquery@3.4.1",
+    "popper.js@^1.15.0",
+    "wow.js@^1.2.2"
+  ],
+  "lockfileEntries": {
+    "@fortawesome/fontawesome-free@^5.8.2": "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-5.8.2.tgz#fae4112c4fb47086f6ae167e32524b280000abd5",
+    "animate.css@^3.7.0": "https://registry.yarnpkg.com/animate.css/-/animate.css-3.7.0.tgz#5de25d1ee5fba11ba6a1e2c4fa568f512eb7d4da",
+    "bootstrap@3.3.7": "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71",
+    "jquery@3.4.1": "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2",
+    "popper.js@^1.15.0": "https://registry.yarnpkg.com/popper.js/-/popper.js-1.15.0.tgz#5560b99bbad7647e9faa475c6b8056621f5a4ff2",
+    "wow.js@^1.2.2": "https://registry.yarnpkg.com/wow.js/-/wow.js-1.2.2.tgz#247519b0a342319b1a63e22aea9acec1a9ea57f5"
+  },
+  "files": [],
+  "artifacts": {}
+}
