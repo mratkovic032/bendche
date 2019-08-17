@@ -314,9 +314,6 @@ ul.nav.navbar-nav.navbar-right li.active a:after {
     -moz-transition: all .3s;
     -o-transition: all .3s;
 }
-.the-event:hover {
-    /* transform: scale(1.01); */
-}
 .the-event:last-child {
     border-bottom: none;
 }
@@ -433,7 +430,7 @@ ul.nav.navbar-nav.navbar-right li.active a:after {
     background-color: #000;
     background: url("../img/about-band.png") no-repeat center center;
     background-size: cover;  
-    z-index: 2;      
+    /* z-index: 2;       */
 }
 .about-band-headline {
     position: absolute;
@@ -469,14 +466,26 @@ ul.nav.navbar-nav.navbar-right li.active a:after {
     -4px -5px 1px rgb(241, 197, 61),
     -5px -5px 1px rgb(241, 197, 61);    
 }
-
 .about-band-sub-headline {
     position: absolute;
     font-family: 'Raleway', sans-serif;
     font-size: 70px;
     left: 150px;
     letter-spacing: 2px;
-    color: rgba(200, 200, 200, 0.8);     
+    color: rgba(200, 200, 200, 0.8);       
+}
+.about-content {
+    text-align: right;
+}
+.about-content-wrapper {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    position: absolute;
+    color: rgba(200, 200, 200, 0.8);
+    font-size: 20px;
+    width: 80%;
 }
 
 /* ------------------------------------------------------- images ----------------------------------------------------------- */

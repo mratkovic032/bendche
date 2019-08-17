@@ -35,12 +35,11 @@ $(document).ready(function () {
     var lokalWrapper = $('.lokal-img-wrapper'); 
     var lokalInfo = $('.lokal-info');   
 
-    var aboutHeadling = $('.about-band-headline');
-    var aboutHeadingTop = windowHeight - (aboutHeadling.height() * 1.5);
-    aboutHeadling.css({
+    var aboutHeadline = $('.about-band-headline');
+    var aboutHeadingTop = windowHeight - (aboutHeadline.height() * 1.5);
+    aboutHeadline.css({
         'top': aboutHeadingTop + 'px'
-    })
-     
+    })         
 
     var aboutSubHeadline1 = $('.sub-headline-1');
     var aboutSubHeadline2 = $('.sub-headline-2');
@@ -52,8 +51,12 @@ $(document).ready(function () {
     aboutSubHeadline2.css({'top': aboutSubHeadline2Top + 'px'});
     aboutSubHeadline3.css({'top': aboutSubHeadline3Top + 'px'});
 
+    var aboutContentWrapper = $('.about-content-wrapper');        
+    var aboutContentWrapperTop = (aboutHeadingTop - (aboutContentWrapper.height() - aboutHeadline.height())) - 30;
+    aboutContentWrapper.css({'top': aboutContentWrapperTop + 'px'});
+
     var lokalMargin = (theEvent.height() - lokalInfo.height()) / 2;
-    console.log(lokalMargin + "je margina top");
+    //console.log(lokalMargin + "je margina top");
     
     $('body').click(function(e) {
         console.log(e.target);
@@ -70,12 +73,8 @@ $(document).ready(function () {
     
     var eventMoreInfo = $('.event-more-info');
     var lokalMoreInfo = $('.lokal-more-info');
-    var event1 = $('#event1');
-    var event2 = $('#event2');
-    var event3 = $('#event3');
-    var event4 = $('#event4');
     var eventMoreInfoOpened = false;
-    
+
     eventMoreInfo.click(function() {
         var buttonId = $(this).attr("id");
         var eventNumber = buttonId.substring(5, 6);
@@ -86,17 +85,9 @@ $(document).ready(function () {
                     var eventToHide = $('#event' + i);
                     // eventToHide.css({'opacity': '0'});
                     eventToHide.hide();
+                    eventToHide.css({'animation-name': 'none'});
                 }
-            }            
-
-            // setTimeout(function() {
-            //     for (var i = 1; i < 5; i++) {
-            //         if (eventNumber != i) {
-            //             var eventToHide = $('#event' + i);
-            //             eventToHide.css({'visibility': 'hidden','display': 'none'});
-            //         }
-            //     }                
-            // }, 300);
+            }                        
 
             setTimeout(function() {
                 lokalWrapper.css({'margin-top':'0px'});
@@ -117,15 +108,6 @@ $(document).ready(function () {
             
             theEvent.css({'height': '25%'});
             lokalMoreInfo.css({'overflow': 'hidden'});
-
-            // setTimeout(function() {
-            //     for (var i = 1; i < 5; i++) {
-            //         if (eventNumber != i) {
-            //             var eventToHide = $('#event' + i);
-            //             eventToHide.css({'visibility': 'visible'});
-            //         }
-            //     } 
-            // }, 300);
 
             setTimeout(function() {
                 for (var i = 1; i < 5; i++) {
@@ -155,14 +137,14 @@ $(document).ready(function () {
             });
         }
     });
-    var event3rdElement, elementOffsetTop, elementOffsetLeft;
+    var elementOffsetTop, elementOffsetLeft;
     var eventsRotatedTextHalfWidth = (eventsRotatedText.width() / 2) + eventsRotatedText.height();        
     var eventsRotatedTextHeight = eventsRotatedText.height();
     //navbar scroll effect 
     $(document).scroll(function () {
         event3rdElement = $('#event3');        
-        elementOffsetTop = (event3rdElement.offset().top) - eventsRotatedTextHeight;
-        elementOffsetLeft = (event3rdElement.offset().left);
+        elementOffsetTop = (eventsWrapper.offset().top + (eventsWrapper.height() / 2)) - eventsRotatedTextHeight;
+        elementOffsetLeft = (eventsWrapper.offset().left);
         // console.log('top ' + elementOffsetTop + ', left ' + elementOffsetLeft);  
         eventsRotatedText.css({
             'left': elementOffsetLeft + 'px',
