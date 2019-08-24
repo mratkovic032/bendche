@@ -57,6 +57,14 @@ $(document).ready(function () {
 
     var lokalMargin = (theEvent.height() - lokalInfo.height()) / 2;
     //console.log(lokalMargin + "je margina top");
+
+    var instrumentsImg = $('#instruments-img');
+    var instrumentsImgTop = windowHeight - instrumentsImg.height();
+    var instrumentsImgLeft = winodwWidth - instrumentsImg.width();
+    instrumentsImg.css({
+        'top' : instrumentsImgTop + 'px',
+        'left': instrumentsImgLeft +'px'
+    });
     
     $('body').click(function(e) {
         console.log(e.target);
@@ -64,7 +72,28 @@ $(document).ready(function () {
     new WOW().init({
         mobile: true
     });
-      
+        
+    $('.arrow-up-wrapper').css({
+        'width': $('.vid-list-container').width() + 'px'
+    });
+    var arrowDownWrapperTop = ($('#band').offset().top * 3) + 140 + ($('.vid-list-container').height() - $('.arrow-down-wrapper').height());
+    $('.arrow-down-wrapper').css({
+        'width': $('.vid-list-container').width() + 'px',
+        'top': + arrowDownWrapperTop + 'px'
+    });
+
+    $(".arrow-up").bind("click", function (event) {
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollTop: "-=150px"
+        }, 350);
+    });
+    $(".arrow-down").bind("click", function (event) {        
+        event.preventDefault();
+        $(".vid-list-container").stop().animate({
+            scrollTop: "+=150px"
+        }, 350);
+    });
        
     $('[data-toggle="tooltip"]').tooltip();
     
@@ -682,7 +711,12 @@ $(document).ready(function () {
         
     $("[data-toggle='collapse']").click(function () {
         $('.navbar-header').toggleClass('active');
-    });    
+    }); 
+    
+    $('.vid-item').click(function() {
+        var youtubeId = $(this).attr('id');
+        $('#vid-frame').attr('src', 'http://www.youtube.com/embed/' + youtubeId + '?controls=0&autoplay=1');        
+    });
 
    
     (function ($) {
