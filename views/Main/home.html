@@ -17,7 +17,10 @@
 			<ul class="nav navbar-nav navbar-right">
 				<li class="wow fadeInUp" data-wow-duration="1.6s"><a href="#myPage" class="active">početna</a></li>
 				<li class="wow fadeInUp" data-wow-duration="1.4s"><a href="#events">nastupi</a></li>
-				<li class="wow fadeInUp" data-wow-duration="1.2s"><a href="#band">bend</a></li>
+                <li class="wow fadeInUp" data-wow-duration="1.2s"><a href="#band">o nama</a></li>
+                <li class="wow fadeInUp" data-wow-duration="1.2s"><a href="#youtube">youtube</a></li>
+                <li class="wow fadeInUp" data-wow-duration="1.2s"><a href="#images">galerija</a></li>
+                <li class="wow fadeInUp" data-wow-duration="1.2s"><a href="#testimonials">vaša mišljenja</a></li>
 				<li class="wow fadeInUp" data-wow-duration="1s"><a href="#contact">kontakt</a></li>
 			</ul>
 		</div>                
@@ -477,8 +480,43 @@
 </section>
 <hr />
 <section id="contact">
-    <img id="instruments-img" src="{{ BASE }}/assets/img/backgrounds/instruments.png" alt="instruments" />
-
+    <div class="container-fluid">
+        <div class="row" style="text-align: right;">
+            <div class="col-lg-4 col-lg-offset-1">
+                <div class="contact-form wow fadeIn" data-wow-delay="0.5s">
+                    <form action="php/contact.php" method="POST">
+                        <div class="form-group">
+                            <label for="name_surname">ime i prezime</label>
+                            <input type="text" class="form-control" id="name_surname" name="name_surname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">telefon</label>
+                            <input type="text" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">e-mail</label>
+                            <input type="text" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">poruka</label>
+                            <textarea id="message" class="form-control" rows="1" name="message"></textarea>
+                        </div>                    
+                        <div class="text-center">
+                            <button id="button-submit" type="submit" class="btn btn-default btn-block" name="submit">Pošalji</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 contact-cols">
+                <div class="contact-cols-content">
+                    <p class="wow fadeInRight" data-wow-delay="0.7s">Hocete da nas angazujete?</p>
+                    <p class="wow fadeInRight" data-wow-delay="1s">Ili imate pitanje?</p>
+                    <p class="wow fadeIn" data-wow-delay="2s">Ukoliko želite da stupite u kontakt sa nama, ili imate bilo kakvih pitanja u vezi našeg angažovanja, možete poslati poruku popunjavanjem formulara.</p>
+                </div>
+            </div>
+            <img id="instruments-img" src="{{ BASE }}/assets/img/backgrounds/instruments.png" alt="instruments" />
+        </div>
+    </div>
 </section>
 
 

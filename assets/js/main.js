@@ -59,27 +59,95 @@ $(document).ready(function () {
     //console.log(lokalMargin + "je margina top");
 
     var instrumentsImg = $('#instruments-img');
-    var instrumentsImgTop = windowHeight - instrumentsImg.height();
-    var instrumentsImgLeft = winodwWidth - instrumentsImg.width();
+    var instrumentsImgWidth = ($('.contact-cols').width() * 3) / 4;
+    var instrumentsImgHeight = instrumentsImgWidth + 100;
+    var instrumentsImgTop = $('#contact').height() - instrumentsImgHeight;
     instrumentsImg.css({
-        'top' : instrumentsImgTop + 'px',
-        'left': instrumentsImgLeft +'px'
+        'width': instrumentsImgWidth + 'px',
+        'height': instrumentsImgHeight + 'px',
+        'top' : instrumentsImgTop + 'px'
     });
     
-    $('body').click(function(e) {
-        console.log(e.target);
-    });
+    // $('body').click(function(e) {
+    //     console.log(e.target);
+    // });
     new WOW().init({
         mobile: true
     });
-        
+
+    $('#name_surname').focus(function() {        
+        $("[for='name_surname']").css({
+            'top': '0px',
+            'font-size': '13px'
+        });
+    });
+    $('#name_surname').blur(function() {  
+        if(!$(this).val()){            
+            $("[for='name_surname']").css({
+                'top': '30px',
+                'font-size': '16px'
+            });
+        }     
+    });
+    $('#email').focus(function() {
+        $("[for='email']").css({
+            'top': '0px',
+            'font-size': '13px'
+        });
+    });
+    $('#email').blur(function() {  
+        if(!$(this).val()){            
+            $("[for='email']").css({
+                'top': '30px',
+                'font-size': '16px'
+            });
+        }     
+    });
+    $('#message').focus(function() {        
+        $("[for='message']").css({
+            'top': '0px',
+            'font-size': '13px'
+        });
+    });
+    $('#message').blur(function() {  
+        if(!$(this).val()){            
+            $("[for='message']").css({
+                'top': '30px',
+                'font-size': '16px'
+            });
+        }     
+    });
+    $('#phone').focus(function() {        
+        $("[for='phone']").css({
+            'top': '0px',
+            'font-size': '13px'
+        });
+    });
+    $('#phone').blur(function() {  
+        if(!$(this).val()){            
+            $("[for='phone']").css({
+                'top': '30px',
+                'font-size': '16px'
+            });
+        }     
+    });
+
+    // var contactForm = $('.contact-form');
+    // var contactFormMarginTop = ($('#contact-row').height() - contactForm.height()) / 2;    
+    // contactForm.css({'margin-top': contactFormMarginTop + 'px'});
+    
+    $('.vid-item').click(function() {
+        var youtubeId = $(this).attr('id');
+        $('#vid-frame').attr('src', 'http://www.youtube.com/embed/' + youtubeId + '?controls=0&autoplay=1');        
+    });
+
     $('.arrow-up-wrapper').css({
         'width': $('.vid-list-container').width() + 'px'
     });
     var arrowDownWrapperTop = ($('#band').offset().top * 3) + 140 + ($('.vid-list-container').height() - $('.arrow-down-wrapper').height());
     $('.arrow-down-wrapper').css({
         'width': $('.vid-list-container').width() + 'px',
-        'top': + arrowDownWrapperTop + 'px'
+        'top': + arrowDownWrapperTop - 2 + 'px'
     });
 
     $(".arrow-up").bind("click", function (event) {
@@ -105,10 +173,11 @@ $(document).ready(function () {
     var eventMoreInfoOpened = false;
 
     eventMoreInfo.click(function() {
-        var buttonId = $(this).attr("id");
+        var buttonId = $(this).attr("id");        
         var eventNumber = buttonId.substring(5, 6);
 
         if (!eventMoreInfoOpened) {
+            $(this).text('zatvori');
             for (var i = 1; i < 5; i++) {
                 if (eventNumber != i) {
                     var eventToHide = $('#event' + i);
@@ -132,6 +201,7 @@ $(document).ready(function () {
 
             eventMoreInfoOpened = true;
         } else {
+            $(this).text('više infomacija');
             lokalWrapper.css({'margin-top': lokalMargin + 'px'});
             lokalInfo.css({'margin-top': lokalMargin + 'px'});
             
@@ -711,13 +781,7 @@ $(document).ready(function () {
         
     $("[data-toggle='collapse']").click(function () {
         $('.navbar-header').toggleClass('active');
-    }); 
-    
-    $('.vid-item').click(function() {
-        var youtubeId = $(this).attr('id');
-        $('#vid-frame').attr('src', 'http://www.youtube.com/embed/' + youtubeId + '?controls=0&autoplay=1');        
-    });
-
+    });         
    
     (function ($) {
 
