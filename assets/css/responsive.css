@@ -1,0 +1,80 @@
+@media (min-width: 1400px) and (max-width: 1680px) {
+    .lokal-img {
+        max-width: 95%;
+        max-height: 95%;
+    }
+    .about-band-headline {        
+        left: 100px;
+        font-size: 100px;
+    }
+    .about-band-sub-headline {
+        left: 100px;
+        font-size: 40px;
+    }
+    .about-content-wrapper {     
+        font-size: 16px;        
+    }
+    #button-submit {
+        font-size: 16px;        
+    }        
+    .contact-cols-content p:nth-child(1),
+    .contact-cols-content p:nth-child(2) {
+        font-size: 30px;
+    }
+    .contact-cols-content p:nth-child(3) {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.89px) {
+    .name {
+        font-size: 34px;
+    }
+    .lokal-name {
+        font-size: 28px;
+    }
+    .info-section-headers {
+        font-size: 15px;        
+    }
+    .about-text {
+        font-size: 12px;
+    }
+    .social-media a {
+        font-size: 20px;
+    }
+    .events-rotated-text {
+        font-size: 37px;
+    }
+    .lokal-img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+    .about-band-headline {        
+        left: 100px;
+        font-size: 70px;
+    }
+    .about-band-sub-headline {
+        left: 100px;
+        font-size: 30px;
+    }
+    .about-content-wrapper {     
+        font-size: 15px;        
+    }
+    #contact {
+        padding-top: 80px;
+    }
+    #button-submit {
+        font-size: 15px;        
+    }        
+    .contact-cols-content p:nth-child(1),
+    .contact-cols-content p:nth-child(2) {
+        font-size: 25px;
+    }
+    .contact-cols-content p:nth-child(3) {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.89px) {
+    
+}
