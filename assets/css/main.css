@@ -562,9 +562,11 @@ ul.nav.navbar-nav.navbar-right li.active a:after {
 }
 
 /* ------------------------------------------------------- images ----------------------------------------------------------- */
-#images {    
-    /* background-color: #000; */
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(143, 113, 22) 50%, rgba(0,0,0,1) 100%);
+#images {       
+    /* background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(134,134,134,1) 50%, rgba(0,0,0,1) 100%); */
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(99,74,0,1) 50%, rgba(0,0,0,1) 100%);
     margin-bottom: 100px;
     padding-top: 50px;
 }
@@ -654,10 +656,12 @@ ul.nav.navbar-nav.navbar-right li.active a:after {
 /* ----------------------------------------------------------------contact ------------------------------------------------------------------- */
 #contact {
     height: 90vh !important;
-    background-image: url("../img/backgrounds/footer.png");
+    /* background-image: url("../img/backgrounds/footer.png");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;  
+    background-size: cover;   */
+    background: rgb(122,93,0);
+    background: linear-gradient(0deg, rgba(122,93,0,1) 0%, rgba(70,52,0,1) 25%, rgba(0,0,0,1) 100%);
     padding-top: 50px;
     color: #9D9D9D;  
 }
