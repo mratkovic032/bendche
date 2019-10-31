@@ -1,8 +1,4 @@
-@media (min-width: 1400px) and (max-width: 1680px) {
-    .lokal-img {
-        max-width: 95%;
-        max-height: 95%;
-    }
+@media (min-width: 1400px) and (max-width: 1680px) {    
     .about-band-headline {        
         left: 100px;
         font-size: 100px;
@@ -41,14 +37,7 @@
     }
     .social-media a {
         font-size: 20px;
-    }
-    .events-rotated-text {
-        font-size: 37px;
-    }
-    .lokal-img {
-        max-width: 90%;
-        max-height: 90%;
-    }
+    }        
     .about-band-headline {        
         left: 100px;
         font-size: 70px;
@@ -58,7 +47,104 @@
         font-size: 30px;
     }
     .about-content-wrapper {     
+        font-size: 14px;        
+    }
+    .thumb img {
+        top: -23px;
+    }
+    #contact {
+        padding-top: 20px;
+    }
+    #button-submit {
         font-size: 15px;        
+    }        
+    .contact-cols-content p:nth-child(1),
+    .contact-cols-content p:nth-child(2) {
+        font-size: 25px;
+    }
+    .contact-cols-content p:nth-child(3) {
+        font-size: 16px;
+    }    
+    .events-wrapper {        
+        padding: 10px;        
+    }  
+    .events-rotated-text {            
+        font-size: 28px;
+        letter-spacing: 40px;            
+    }     
+    .lokal-name {        
+        font-size: 24px;
+    }
+    .lokal-address {
+        font-size: 13px;
+    }
+    .lokal-date {
+        font-size: 14px;
+    }
+    .lokal-small-desc {
+        margin: 0;
+    }
+    .event-more-info {
+        font-size: 13px;
+    }
+    nav.navbar.navbar-inverse {        
+        font-size: 10px !important;
+        letter-spacing: 3px;
+    }
+    .info-section {
+        padding: 20px 30px 30px 30px;           
+    }
+    .social-media {
+        margin-top: 17px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.89px) {
+    nav.navbar.navbar-inverse {        
+        font-size: 10px !important;
+        letter-spacing: 3px;
+    }
+    .info-section {
+        padding: 20px 30px 30px 30px;           
+    }
+    .social-media {
+        margin-top: 17px;
+    }
+    .social-media a {
+        font-size: 20px;
+    } 
+    .name {
+        font-size: 34px;
+    }    
+    .lokal-address {
+        font-size: 13px;
+    }
+    .lokal-date {
+        font-size: 14px;
+    }
+    .lokal-small-desc {
+        margin: 0;
+        font-size: 13px;
+    }
+    .lokal-name {
+        font-size: 26px;
+    }
+    .info-section-headers {
+        font-size: 15px;        
+    }
+    .about-text {
+        font-size: 12px;
+    }           
+    .about-band-headline {        
+        left: 100px;
+        font-size: 60px;
+    }
+    .about-band-sub-headline {
+        left: 100px;
+        font-size: 30px;
+    }
+    .about-content-wrapper {     
+        font-size: 14px;        
     }
     #contact {
         padding-top: 80px;
@@ -72,9 +158,381 @@
     }
     .contact-cols-content p:nth-child(3) {
         font-size: 16px;
+    }    
+    .events-wrapper {        
+        padding: 10px;        
+    }  
+    .events-rotated-text {            
+        display: none;           
+    }         
+    .event-more-info {
+        font-size: 13px;
     }
+    .thumb img {
+        top: -10px;
+    }    
+    #testimonials {
+        height: 120vh;
+    }
+    .testimonial-box {
+        height: 25vh;
+    }
+    .contact-form {
+        padding: 15px 35px;
+    }
+    .contact-form .form-group label {        
+        font-size: 14px;        
+    }    
 }
 
-@media (min-width: 992px) and (max-width: 1199.89px) {
-    
+@media (min-width: 768px) and (max-width: 991.89px) {
+    .name {
+        font-size: 30px;
+    }
+    .lokal-name {
+        font-size: 28px;
+    }
+    .info-section-headers {
+        font-size: 15px;        
+    }
+    .info-section {
+        padding: 20px;
+    }
+    .about-text {
+        font-size: 12px;
+    }
+    .social-media a {
+        font-size: 20px;
+    }        
+    .about-band-headline {        
+        left: 40px;
+        font-size: 60px;
+    }
+    .about-band-sub-headline {
+        left: 40px;
+        font-size: 30px;
+    }
+    .about-content-wrapper {     
+        font-size: 14px;        
+    }    
+    #button-submit {
+        font-size: 15px;        
+    }        
+    .contact-cols-content p:nth-child(1),
+    .contact-cols-content p:nth-child(2) {
+        font-size: 25px;
+    }
+    .contact-cols-content p:nth-child(3) {
+        font-size: 16px;
+    }
+    #contact {        
+        padding-top: 70px;          
+        padding-bottom: 50px;      
+    } 
+    .events-wrapper {        
+        padding: 10px;        
+    }  
+    .events-rotated-text {            
+        display: none;            
+    }     
+    .lokal-name {        
+        font-size: 24px;
+    }
+    .lokal-address {
+        font-size: 13px;
+    }
+    .lokal-date {
+        font-size: 14px;
+    }
+    .lokal-small-desc {
+        margin: 0;
+        font-size: 13px;
+    }
+    .event-more-info {
+        font-size: 13px;
+    }
+    nav.navbar.navbar-inverse {        
+        font-size: 7px !important;
+        letter-spacing: 2px;
+    }
+    #big-logo-brand {
+        width: 90px;
+        height: 90px;
+    }    
+    .social-media {
+        margin-top: 17px;
+    }        
+    .contact-form {
+        padding: 15px 35px;
+    }
+    .contact-form .form-group label {        
+        font-size: 14px;        
+    }
+    .about-content {
+        text-align: left;
+        margin-left: 30px;
+    }
+    #youtube {
+        height: 65vh;
+    }
+    #vid-frame,
+    .vid-list-container {
+        height: 60vh;
+    }    
+    .thumb img {        
+        top: -10px;
+    }       
+    .testimonial-box {              
+        height: 20vh;         
+    }
+    .testimonial-footer {
+        right: 30px;
+        bottom: 40px;
+    }
+    #instruments-img {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    #big-logo-brand:hover {
+        transform: none;
+    }
+    .navbar-toggle:hover .icon-bar {
+        background-color: none;
+    }
+    ul.nav.navbar-nav.navbar-right li a.changed:hover {
+        background-color: none;
+    }
+    ul.nav.navbar-nav.navbar-right li a:hover:after {    
+        width: none;
+        transition: none;
+    }
+    ul.nav.navbar-nav.navbar-right li a:hover {
+        color: none;
+    }
+    .social-media a:hover {
+        color: none;
+    }
+    .event-more-info:hover {
+        color: none;
+        background-color: none;
+    }
+    .lokal-socials:hover,
+    .lokal-contact:hover {
+        color: none;        
+    }
+    .vid-item:hover {
+        background-color: none;
+    }
+    .images-column img:hover {
+        transform: none;        
+    } 
+    #button-comment:hover {
+        background-color: none;
+        color: none;
+    }
+    #button-submit:hover {
+        background-color: none;
+        color: none;
+    }
+    .contact-links:hover {
+        color: none;        
+    }
+    #button_submit_comment:hover {
+        background-color: none;
+        color: none;
+    }
+    .comment-stars:hover {
+        color: inherit;
+    }
+    .navbar-toggle:hover {
+        background-color: none;
+    }
+    .navbar-toggle:hover .icon-bar {
+        background-color: none;
+    }
+
+    .navbar-header {
+        padding-bottom: 0px;
+    }
+    .landing-img {        
+        right: 0;
+        bottom: 0;
+    }
+    .name {
+        font-size: 25px;
+    }
+    .playing-instruments {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+    .info-section-headers {
+        font-size: 10px;        
+    }
+    .info-section {
+        padding: 0 10px 10px 10px;
+    }
+    .social-media {
+        margin-top: 17px;
+        margin-top: 12px;
+    }
+    .about-text {
+        font-size: 8px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    .social-media a {
+        font-size: 15px;
+    }    
+    #band {
+        height: 100vh;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }    
+    .about-band-headline {        
+        left: 15px;
+        font-size: 54px;
+    }
+    .about-band-sub-headline {
+        left: 15px;
+        font-size: 28px;
+    }
+    .about-content-wrapper {     
+        font-size: 14px;  
+        width: 90%;
+    }    
+    .about-content {
+        text-align: left;
+        margin-left: 0px;        
+    }
+    #button-submit {
+        font-size: 15px;        
+    }                
+    .events-wrapper {        
+        margin-top: 0px;
+        padding: 10px; 
+        box-shadow: none;       
+    }  
+    .events-rotated-text {            
+        display: none;            
+    }   
+    .event-more-info {
+        font-size: 10px;
+        padding: 2.5px 6px
+    }      
+    .lokal-name {        
+        font-size: 24px;
+    }
+    .lokal-address {
+        font-size: 13px;
+        margin-bottom: 0px;
+    }
+    .lokal-date {
+        font-size: 14px;
+    }
+    .lokal-small-desc {
+        margin: 0;
+        font-size: 13px;
+    }   
+    .lokal-sub-title {
+        font-size: 13px;
+    } 
+    .lokal-big-desc {
+        font-size: 12px;
+    }
+    nav.navbar.navbar-inverse {        
+        font-size: 7px !important;
+        letter-spacing: 2px;
+    }
+    #big-logo-brand {
+        width: 85px;
+        height: 85px;
+        left: -10px;
+        top: -10px
+    }
+    .contact-cols-content p:nth-child(1),
+    .contact-cols-content p:nth-child(2) {
+        font-size: 25px;
+    }
+    .contact-cols-content p:nth-child(3) {
+        font-size: 16px;
+    }
+    .contact-cols p {
+        margin-left: 0px !important;
+    }
+    #contact {        
+        padding-top: 70px;  
+        padding-bottom: 70px;      
+    }             
+    .contact-form {
+        padding: 15px 25px;
+    }
+    .contact-form .form-group label {        
+        font-size: 14px;        
+    }    
+    #youtube {
+        height: 80vh;
+        padding-top: 15px;
+    }
+    #vid-frame {
+        height: 60vh;
+        width: 100%;
+    } 
+    .vid-list-container {
+        width: 100%;
+        height: 20vh;        
+        overflow-x: scroll;
+    } 
+    .vid-list {            
+        height: 20vh;        
+        position: relative;        
+        padding: 0px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    .vid-item {
+        display: inline-block;
+        padding: 5px;
+        width: 49%;
+        height: 100%;
+    }  
+    .vid-item .desc {
+        font-size: 12px;
+        margin-top: 7px;
+    }
+    .thumb {
+        height: 70%;
+    }
+    .thumb img {        
+        top: -20px;
+    }
+    .arrow-up-wrapper,
+    .arrow-down-wrapper {
+        display: none;
+    }
+    #testimonials {
+        padding-top: 50px;
+    }
+    .testimonial-box {              
+        height: 23vh;
+    }
+    .testimonial-footer {
+        right: 30px;
+        bottom: 40px;
+        font-size: 12px;
+    }
+    #instruments-img {
+        display: none;
+    }
+    #button-comment {           
+        margin-top: 35px;
+    }
+    .images-column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    #images {
+        margin-bottom: 10px;
+    }
 }

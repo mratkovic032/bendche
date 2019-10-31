@@ -1,0 +1,27 @@
+{
+    "remotePath": "./",
+    "host": "ftp.milosr.mycpanel.rs",
+    "username": "test@milosr.mycpanel.rs",
+    "password": "Samsungtest4!",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "agent": null,
+    "allow": [],
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "extensionsToInclude": [
+            ""
+        ],
+        "path": ""
+    }
+}
