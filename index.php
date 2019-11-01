@@ -580,7 +580,7 @@
 				}			
 							
 				// var script = document.createElement('script');
-				// script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyDLm2NbWHdZ1T2uGYmIz-HJM-n5AwF4RlY&callback=initMap";
+				
 				// document.body.appendChild(script);
 
 
