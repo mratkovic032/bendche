@@ -2,7 +2,7 @@
   "dependencies": {
     "animate.css": "^3.7.0",
     "bootstrap": "3.3.7",
-    "jquery": "3.4.1",
+    "jquery": "3.5.0",
     "popper.js": "^1.15.0",
     "wow.js": "^1.2.2"
   },
